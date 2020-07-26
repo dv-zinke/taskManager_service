@@ -1,6 +1,7 @@
 taskmanager_service.iml
 .idea
 
+.env
 
 
 node_modules
