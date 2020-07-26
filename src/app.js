@@ -1,4 +1,6 @@
-var express = require("express");
+const express = require("express");
+
+const app = express();
 
 
-console.log("Hello node.js");
+app.listen(4000, ()=> console.log('part 4000 start'));
