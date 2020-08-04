@@ -3,6 +3,8 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const bodyParser = require('body-parser');
 const { body, validationResult } = require('express-validator');
+
+const User = require('./models/user');
 dotenv.config();
 
 
@@ -36,6 +38,10 @@ app.post('/auth/signup', [
     res.json({
         message: req.body
     })
+
+    //유저 이메일 체크
+
+    //패스 워드 해쉬화 데이터 저
 });
 
 app.use((error, req, res,next)=>{
